@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skill Tennis</title>
+
+    <!-- Video style -->
+    <style type="text/css">
+        video {
+            transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+            -moz-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            border: 4px double black;
+        }
+    </style>
+
+    <!-- Static lib -->
+    <script src="../jquerylib/jquery-3.0.0.js"></script>
+    <script src="../trackingjslib/build/tracking.js"></script>
+    <script src="../threejslib/three.js"></script>
+    <script src="../threejslib/MTLLoader.js"></script>
+    <script src="../threejslib/OBJLoader.js"></script>
+</head>
+
+<body>
+    <!-- Debug info -->
+    <div id="log"></div>
+    <div id="log1"></div>
+    <div id="log2"></div>
+    <div id="log3"></div>
+    <div id="log4"></div>
+
+    <!-- Allow form -->
+    <div id="allow"></div>
+
+    <!-- Camera form -->
+    <video id="video" width="320" height="240" autoplay="autoplay" ></video>
+
+    <!-- Canvas form -->
+    <canvas id="render_canvas" style="border: none;" width="1000" height="800"></canvas>
+
+    <!-- Capturing -->
+    <script src="js/capture/camera.js"></script>
+    <script src="js/capture/colortracking.js"></script>
+
+    <!-- Basic vector math -->
+    <script src="js/vecmath.js"></script>
+
+    <!-- Rendering -->
+    <script src = "/socket.io/socket.io.js"></script>
+
+    <script>
+        var socket = io.connect();//io.connect('http://localhost:');
+    </script>
+
+    <script src="js/animate/anim.js"></script>
+    <script src="js/tennis/ball.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

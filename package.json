@@ -1,0 +1,12 @@
+{
+   "name": "DK6_MS5_Project",
+   "version": "1.0.0",
+   "description": "Denis Kuzentsov and Makar Solomatin project",
+   "author": "Denis Kuznetsov and Makar Solomatin",
+   "dependencies": {
+   	"express": ">= 4.13.4",
+    	"socket.io": ">= 1.4.6",
+    	"http": ">= 0.0.0",
+    	"util": ">= 0.10.3"
+    }
+}
